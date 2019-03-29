@@ -24,7 +24,7 @@ export default function connectAdvance(selectorState) {
                     this.selector = WrappedComponent
                 }
 
-                componentDidMount() {
+                componentWillMount() {
                     this._isMounted = true
                     this._subscribe()
                 }
