@@ -89,16 +89,17 @@ function _dispatchAction(type, ...rest) {
             }
             _logger('Dispatch:', `"${type}"`)
             if (_isFunction(storeObj.actionListener)) {
-                storeObj.actionListener.apply(undefined, [type, _updateState].concat(rest))
+                return storeObj.actionListener.apply(undefined, [type, _updateState].concat(rest))
             } else if (_isObject(storeObj.actionListener)) {
                 const fn = storeObj.actionListener[type]
                 if (_isFunction(fn)) {
-                    fn.apply(undefined, [_updateState].concat(rest))
+                    return fn.apply(undefined, [_updateState].concat(rest))
                 }
             }
         }
     } catch (e) {
         _errorLogger(e)
+        return null
     }
 }
 
