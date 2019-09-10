@@ -29,17 +29,17 @@
     "testEnvironment": "jsdom",
     "testURL": "http://localhost",
     "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+      ".+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      ".+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
     "transformIgnorePatterns": [
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
-      "^.+\\.module\\.(css|sass|scss)$"
+      ".+\\.module\\.(css|sass|scss)$"
     ],
     "moduleNameMapper": {
-      "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+      "react-native$": "react-native-web",
+      ".+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
     },
     "moduleFileExtensions": [
       "web.js",
@@ -60,18 +60,18 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-prettier": "^3.6.0",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-config-prettier": "3.6.0",
+    "eslint-plugin-prettier": "3.0.1",
     "prettier": "1.16.0",
     "@babel/core": "7.1.6",
     "@svgr/webpack": "2.4.1",
-    "actox": "^0.1.3",
+    "actox": "0.1.3",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
     "babel-loader": "8.0.4",
-    "babel-plugin-named-asset-import": "^0.3.0",
-    "babel-preset-react-app": "^7.0.0",
+    "babel-plugin-named-asset-import": "0.3.0",
+    "babel-preset-react-app": "7.0.0",
     "bfj": "6.1.1",
     "case-sensitive-paths-webpack-plugin": "2.1.2",
     "chalk": "2.4.1",
@@ -79,7 +79,7 @@
     "dotenv": "6.0.0",
     "dotenv-expand": "4.2.0",
     "eslint": "5.6.0",
-    "eslint-config-react-app": "^3.0.6",
+    "eslint-config-react-app": "3.0.6",
     "eslint-loader": "2.1.1",
     "eslint-plugin-flowtype": "2.50.1",
     "eslint-plugin-import": "2.14.0",
@@ -100,10 +100,10 @@
     "postcss-loader": "3.0.0",
     "postcss-preset-env": "6.3.1",
     "postcss-safe-parser": "4.0.1",
-    "react": "^16.7.0",
-    "react-app-polyfill": "^0.2.0",
-    "react-dev-utils": "^7.0.1",
-    "react-dom": "^16.7.0",
+    "react": "16.7.0",
+    "react-app-polyfill": "0.2.0",
+    "react-dev-utils": "7.0.1",
+    "react-dom": "16.7.0",
     "resolve": "1.8.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
