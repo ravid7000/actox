@@ -1,0 +1,30 @@
+{
+  "name": "actox",
+  "version": "2.0.0",
+  "description": "OQL for frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravid7000/actox.git"
+  },
+  "keywords": [
+    "State",
+    "Management",
+    "OQL"
+  ],
+  "author": "Ravi Dhiman <ravid7000@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravid7000/actox/issues"
+  },
+  "homepage": "https://github.com/ravid7000/actox#readme",
+  "dependencies": {
+    "typescript": "3.7.2"
+  },
+  "devDependencies": {
+    "typescript-tslint-plugin": "0.5.5"
+  }
+}
